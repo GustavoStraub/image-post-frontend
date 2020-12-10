@@ -1,0 +1,61 @@
+html, body {
+  background-color: #807e7e;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.Galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Foto {
+  height: 200px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.Galeria :nth-child(even) {
+  transform: rotate(5deg);
+}
+
+.Galeria :nth-child(odd) {
+  transform: rotate(-5deg);
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 0;
+}
+.form button{
+  margin-top: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+form input, #inputfile{
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
